@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>México en cada bocado</title>
+  <style>
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #ffa952;
+      color: #3a2e2e;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc107;
+  padding: 1em;
+  font-size: 2em; 
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+
+    .header-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      margin-left: 30px;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 1.3em;
+
+      border-top: 2px solid #ff9800;
+      border-bottom: 2px solid #ff9800;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2em 1em;
+      gap: 1.5em;
+    }
+
+    .arrow {
+      width: 280px;
+      height: 160px;
+      clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .arrow:hover {
+      transform: scale(1.07);
+    }
+
+    section {
+      padding: 2em;
+      display: none;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #4e342e;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      color: #5d4037;
+    }
+
+    .contacto {
+      background-color: #ffb74d;
+      padding: 2em;
+      text-align: center;
+      margin-top: 2em;
+      font-size: 1.1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5em;
+      font-size: 1em;
+      background-color: #ffe0b2;
+      margin-top: 2em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach((sec) => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    México en cada bocado
+    <img src="CHAMBEADORES/doñita.webp" alt="señora con comida" class="header-img" />
+  </header>
+
+  <div class="intro">
+    Cocina con amor, siempre con mejor sabor.<br />
+    Nos especializamos en los platillos más tradicionales y deliciosos de la gastronomía mexicana.
+  </div>
+
+  <div class="menu">
+    <div class="arrow" style="background-image: url('CHAMBEADORES/GORDITAS.jpeg');" onclick="showSection('gorditas')">Gorditas</div>
+    <div class="arrow" style="background-image: url('CHAMBEADORES/POZOLE.jpeg');" onclick="showSection('pozole')">Pozole</div>
+    <div class="arrow" style="background-image: url('CHAMBEADORES/FLAUTAS.jpeg');" onclick="showSection('flautas')">Flautas</div>
+    <div class="arrow" style="background-image: url('CHAMBEADORES/QUESADILLAS.jpeg');" onclick="showSection('quesadillas')">Quesadillas</div>
+  </div>
+
+  <section id="gorditas">
+    <h2>Gorditas</h2>
+    <p>Disfruta nuestras gorditas rellenas de chicharrón, frijoles y más.</p>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Buena Comida - Gorditas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .tarjeta {
+      background-color: #ff914d;
+      border-radius: 10px;
+      padding: 50px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .tarjeta img 
+  .menu-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  </style>
+
+</div>
+</head>
+<body>
+
+  <div class="doñita">
+    <h3>Gorditas de Chicharrón Prensado</h3>
+    <ul>
+      <li><strong>Tortilla:</strong> Gruesa y de maíz, dorada en el comal.</li>
+      <li><strong>Relleno:</strong> Chicharrón prensado (piel de cerdo frita y desmenuzada).</li>
+      <li><strong>Sabor:</strong> Salado y crujiente, con un toque jugoso.</li>
+      <li><strong>Complementos:</strong> Puede incluir cebolla, cilantro y salsas (roja o verde).</li>
+      <li><strong>Servir con:</strong> Crema y queso fresco al gusto.</li>
+      <li><strong>Ideal para:</strong> Antojitos, desayunos o comidas informales.</li>
+     </ul>
+    <img src="CHAMBEADORES/GORCH.jpg" alt="Chicharrón Prensado">
+    </div>
+  </div>
+
+  <div class="doñita">
+    <h3>Gorditas de Haba</h3>
+    <ul>
+      <li><strong>Tortilla:</strong> Gruesa y de maíz, cocida en el comal.</li>
+      <li><strong>Relleno:</strong> Puré de habas, sazonado con ajo y cebolla.</li>
+      <li><strong>Sabor:</strong> Suave y cremoso, con un toque terroso.</li>
+      <li><strong>Complementos:</strong> Quesillo, salsa y cebolla picada.</li>
+      <li><strong>Servir con:</strong> Crema y aguacate opcional.</li>
+      <li><strong>Ideal para:</strong> Desayunos o antojitos.</li>
+    </ul>
+    <img src="CHAMBEADORES/MMMM.jpg" alt="Gordita de haba">
+    <div class="contacto">
+      <p><strong>Facebook:</strong> labuenacomidaoficial</p>
+      <p><strong>Instagram:</strong> labuenacomida12</p>
+      <p><strong>Email:</strong> labuenacomida12@gmail.com</p>
+    </div>
+  </div>
+   <footer>
+    © 2025 México en cada bocado. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+  </section>
+
+  <section id="pozole">
+    <h2>Pozole</h2>
+    <p>Tradicional pozole rojo con carne de cerdo, servido con lechuga, rábano y tostadas.</p>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú - La Buena Comida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .menu-card {
+      background-color: #ffa54f;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+     .menu-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+    .menu-title {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .menu-subtitle {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #663300;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #000;
+    }
+
+    .contact {
+      font-size: 0.9em;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="menu-card">
+      <div class="menu-title">Maciza de puerco</div>
+      <ul>
+        <li>Lechuga fresca, rábanos y cebolla picada</li>
+        <li>Limón y orégano para realzar el sabor</li>
+        <li>Tostadas con crema y queso</li>
+        <li>Chicharrón crujiente</li>
+      </ul>
+      <img src="CHAMBEADORES/MACIZA.jpg" alt="Maciza de puerco">
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-title">Pollo</div>
+      <ul>
+        <li>Lechuga, rábanos y cebolla picada</li>
+        <li>Limón, orégano y chile en polvo</li>
+        <li>Tostadas crujientes con crema y queso</li>
+        <li>Aguacate en rodajas</li>
+      </ul>
+      <img src="CHAMBEADORES/POLLO.jpg" alt="Pollo">
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-subtitle">México en cada bocado</div>
+      <div class="menu-title">Surtida (pollo y maciza de puerco)</div>
+      <ul>
+        <li>Lechuga, rábanos y cebolla picada</li>
+        <li>Limón, orégano y chile en polvo</li>
+        <li>Tostadas crujientes con crema y queso</li>
+        <li>Aguacate en rodajas</li>
+      </ul>
+      <img src="CHAMBEADORES/SURTIDA.jpg" alt="Surtida">
+    </div>
+ <div class="contacto">
+    <h3>¡Búscanos en redes sociales!</h3>
+    <p>
+      <strong>Facebook:</strong> labuenacomidaoficial<br />
+      <strong>Instagram:</strong> labuenacomida12<br />
+      <strong>Email:</strong> labuenacomida12@gmail.com
+    </p>
+  </div>
+  </div>
+   <footer>
+    © 2025 México en cada bocado. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
+
+  </section>
+
+  <section id="flautas">
+    <h2>FLAUTAS</h2>
+    <p>Disfruta nuestras deliciosas flautas</p>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Buena Comida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .tarjeta {
+      background-color: #ff914d;
+      border-radius: 10px;
+      padding: 50px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .tarjeta img 
+  .menu-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  </style>
+</head>
+<body>
+
+    <h3>Res</h3>
+    <ul>
+      <li></strong> lechuga fresca y cebolla picada</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa (verde, roja o de aguacate) aguacate</li>
+      <li><strong> Aguacate
+    </ul>
+    <img src="CHAMBEADORES/res_flau.jpg" alt="flautas de res">
+  </div>
+</div>
+
+    <h3>Jamon con queso</h3>
+    <ul>
+      <li></strong> lechuga fresca y cebolla picada</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa (verde, roja o de aguacate) aguacate</li>
+      <li><strong> Aguacate
+    </ul>
+    <img src="CHAMBEADORES/fl_ques_ja.png" alt="fl_ques_ja">
+     </div>
+</div>
+
+
+    <h3>Pollo</h3>
+    <ul>
+      <li></strong> lechuga fresca y cebolla picada</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa (verde, roja o de aguacate) aguacate</li>
+      <li><strong> Aguacate
+    </ul>
+    <img src="CHAMBEADORES/fl_pollo.jpg" alt="fl_pollo">
+     </div>
+</div>
+ <div class="contacto">
+    <h3>¡Búscanos en redes sociales!</h3>
+    <p>
+      <strong>Facebook:</strong> labuenacomidaoficial<br />
+      <strong>Instagram:</strong> labuenacomida12<br />
+      <strong>Email:</strong> labuenacomida12@gmail.com
+    </p>
+  </div>
+   <footer>
+    © 2025 México en cada bocado. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
+
+
+  </section>
+
+  <section id="quesadillas">
+    <h2>Quesadillas</h2>
+    <p>Disfruta nuestras deliciosas Quesadillas</p>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Buena Comida </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .tarjeta {
+      background-color: #ff914d;
+      border-radius: 10px;
+      padding: 50px;
+      margin: 50px auto;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .tarjeta img 
+  .menu-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  </style>
+</head>
+<body>
+    <h3>Tinga de Pollo</h3>
+    <ul>
+      <li></strong> Lechuga</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa de su preferencia ya sea salsa verde o roja</li>
+    </ul>
+    <img src="CHAMBEADORES/ques_1.jpg" alt="ques_1">
+  </div>
+</div>
+    <h3>Queso</h3>
+    <ul>
+      <li></strong> Lechuga</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa de su preferencia ya sea salsa verde o roja</li>
+    </ul>
+    <img src="CHAMBEADORES/ques_ques.jpg" alt="ques_ques">
+  </div>
+</div>
+    <h3>chicharrón</h3>
+    <ul>
+      <li></strong> lechuga fresca y cebolla picada</li>
+      <li><strong> Crema.</li>
+      <li><strong> Queso rallado (fresco o añejo) </li>
+      <li><strong> Salsa (verde, roja o de aguacate) aguacate</li>
+    </ul>
+    <img src="CHAMBEADORES/ques_chicha.jpg" alt="ques_chicha">
+     </div>
+</div>
+</body>
+</html>
+
+  <div class="contacto">
+    <h3>¡Búscanos en redes sociales!</h3>
+    <p>
+      <strong>Facebook:</strong> labuenacomidaoficial<br />
+      <strong>Instagram:</strong> labuenacomida12<br />
+      <strong>Email:</strong> labuenacomida12@gmail.com
+    </p>
+  </div>
+
+  <footer>
+    © 2025 México en cada bocado. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
